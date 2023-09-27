@@ -1,8 +1,8 @@
 //app.module.ts
 import { Module } from '@nestjs/common';
-import { PrismaModule } from '@server/database/prisma.module';
+import { PrismaModule } from 'apps/api/src/database/prisma.module';
 import { ConfigModule } from '@nestjs/config';
-import { TrpcModule } from '@server/trpc/trpc.module';
+import { TrpcModule } from 'apps/api/src/trpc/trpc.module';
 
 @Module({
   imports: [ConfigModule.forRoot(), TrpcModule, PrismaModule],
