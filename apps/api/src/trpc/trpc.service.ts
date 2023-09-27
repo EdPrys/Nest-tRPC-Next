@@ -1,6 +1,6 @@
 //trpc.service.ts
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from '@server/database/prisma.service';
+import { PrismaService } from 'apps/api/src/database/prisma.service';
 import { initTRPC, TRPCError, inferAsyncReturnType } from '@trpc/server';
 import superjson from 'superjson';
 import { ZodError } from 'zod';

@@ -7,7 +7,7 @@ export default async function Home() {
   console.log("postQuery", postQuery);
   return (
     <>
-      <Clientside />
+      {/* <Clientside /> */}
       server side - {postQuery[0].content}
     </>
   );
