@@ -1,13 +1,24 @@
 {
-  "name": "Nest-Next-trpc",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "pnpm run --parallel dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "nextjs-nestjs-trpc",
+  "private": true,
+  "engines": {
+    "node": ">=v18.16.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "packageManager": "pnpm@8.6.7",
+  "scripts": {
+    "build": "pnpm run build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "pnpm run clean",
+    "db:generate": "pnpm run db:generate",
+    "db:push": "pnpm run db:push db:generate",
+    "db:studio": "pnpm -F db dev",
+    "dev": "pnpm run --parallel dev",
+    "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,json}\" --ignore-path .gitignore",
+    "type-check": "pnpm run type-check",
+    "lint": "pnpm run lint"
+  },
+  "dependencies": {
+    "prettier": "^2.8.8",
+    "prisma": "^5.3.1"
+  }
 }
