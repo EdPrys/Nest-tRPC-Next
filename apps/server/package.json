@@ -33,6 +33,7 @@
     "mongoose": "^7.5.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
+    "superjson": "^1.13.1",
     "zod": "^3.22.2"
   },
   "devDependencies": {
