@@ -20,11 +20,11 @@ export class TrpcRouter {
 
   private appRouter = this.trpc.createTRPCRouter({
     post: this.postRouter,
-    hello: this.trpc.publicProcedure
-      .input(z.object({ name: z.string().optional() }))
-      .query(({ input }) => {
-        return `Hello ${input.name ? input.name : `Bilbo`}`;
-      }),
+    // hello: this.trpc.publicProcedure
+    //   .input(z.object({ name: z.string().optional() }))
+    //   .query(({ input }) => {
+    //     return `Hello ${input.name ?? `Bilbo`}`;
+    //   }),
   });
 
   async applyMiddleware(app: INestApplication) {
