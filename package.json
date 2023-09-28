@@ -3,10 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
-    "dev": "pnpm run --parallel dev",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "devDependencies":
+  {
+    "turbo": "1.10.14"
+  },
+
   "keywords": [],
   "author": "",
   "license": "ISC"
